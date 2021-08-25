@@ -19,7 +19,8 @@ describe ('Kumpulan Testcase', function() {
     })
     it ('Nomor 5',function(){
         cy.visit('https://ultimateqa.com/simple-html-elements-for-automation/')
-        cy.get('.et_pb_cta_0 > .et_pb_button_wrapper > .et_pb_button').click().should('exist')
+         cy.get('.et_pb_cta_0 > .et_pb_button_wrapper > .et_pb_button').click()
+        cy.get('.entry-title').should('contain', 'Button success')
         
     })
     
