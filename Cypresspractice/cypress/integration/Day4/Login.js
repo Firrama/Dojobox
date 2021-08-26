@@ -9,6 +9,7 @@ describe('Hari Ke 4 ', function(){
         it ('Login',function(){
             cy.BukaUrl()
             cy.get('#login2').click()
+            cy.wait(200)
             cy.get('#loginusername').type("zaraki").should('have.value','zaraki')
             cy.get('#loginpassword').type('indonesia12').should('have.value','indonesia12')
             cy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click()
